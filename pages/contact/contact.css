@@ -1,0 +1,96 @@
+
+body {
+
+  background-color: #34495e;
+
+}
+
+#map{
+  width: 100%;
+  height: 500px;
+}
+
+main, form {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.half-part {
+
+  width: 50%;
+
+}
+
+@media(max-width: 400px) {
+  .half-part {
+    width: 100%;
+  }
+}
+
+#formulaire-title {
+
+  text-align: center;
+
+}
+
+#information-utile{
+
+  text-align: center;
+
+}
+
+#formulaire-infos {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.info-utile{
+  color: #778ca3;
+}
+
+
+
+input, textarea {
+
+  width: 65%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 5px transparent;
+  text-align: center;
+  outline: none;
+  background-color: #2c3e50;
+  margin: 10px;
+  color: white;
+
+}
+
+input:focus, textarea:focus {
+
+  border-color: #95a5a6;
+  
+
+}
+
+textarea {
+
+  max-width: 90%;
+  min-height: 200px;
+
+}
+
+input[type="submit"] {
+
+  background-color: green;
+  cursor: pointer;
+
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans Condensed', sans-serif;;
+  overflow-x: hidden ;
+}
+
+header{
+  background-image: url("resources/mottagne.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;  
+  align-items:  center; 
+}
+#header-citation{
+  text-align: center;
+  color: white;
+}
+#header-bar{
+  position: absolute  ;
+  /*position: relative; */
+  top: 20px;
+  left: 20px;
+  color: white; 
+}
+.header-icon{
+  height: 70px;
+  width: auto;
+}
+#menu{
+  display: flex;
+  flex-direction: column; 
+  height: 100px; /* quand on mets l;image mettre la taille de l'image*/
+  transition: height 0.2s linear;
+  overflow: hidden;
+}
+#menu:hover{
+  height: 200px; /* quand on mets l;image taille pour afficher tous les liens*/
+}
+.menu-icon{
+  width: 100px;
+  height:  auto;
+  opacity:  0.8;
+  transition: all 0.2s linear;
+}
+
+.menu-icon:hover{
+  opacity:  1;
+}
+.menu-button{
+  margin: 4px;
+  font-size: 17px;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+  display: flex;
+  flex-direction:   row;  
+  justify-content:  center;
+  align-items:  center;
+  flex-wrap:  wrap;
+  width:  100%;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+section#scientifique {
+  flex-wrap: wrap-reverse!important;
+}
+
+.section-description{
+    width:  50%;
+    min-width:  300px;
+    box-sizing:   border-box; 
+    padding:  20px;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items:  center;
+    min-height: inherit;
+}
+
+.section-image{
+    width: 50%;
+    min-width:  300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items:  center;
+}
+
+footer{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around ;  
+  align-items:  center;
+  background-color: #f8c291;
+  padding:  15px;
+}
+
+.mesAchats{
+  color: #fbc531;
+}
+
+.actual{
+  color: #ffda79;
+  font-weight: bold;
+}
+#diagramme{
+  width: 300px;
+}
+#hommeheureux{
+  width: 300px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AirJar</title>
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKqOW5Z1FsDDAvFLsode9KjOJdrKjCq-s&callback=initMap&libraries=&v=weekly" defer> </script>
+    <script> google.maps.event.addDomListener(window,'load', initMap </script>
+    <script src="contact.js"> </script>
+  </head>
+  <body>
+    <header>
+      <div id="header-bar">
+          <a href="../../index.html"><img class="header-icon" src="../../resources/logo.PNG" alt="logo"></a>
+          <div id="menu">
+            <img class="menu-icon" src="../../resources/menu.png" alt="menu">
+            <a class="menu-button" href="../nosProduits/nosProduits.html"> Nos Produits </a>
+            <div class="actual">
+            <a class="menu-button" href="pages/contact/Contact.html">Contacts</a>
+            </div>
+            <!--<a class="menu-button" href="/pages/mesAchats/mesAchats.html"> Mes achats ? </a>-->
+          </div>
+      </div>
+      <div id="header-citation">
+        <h1> Nous Contacter </h1>
+        <h2> <em> " Partageons cette émotion "</em> </h2>
+      </div>
+    </header>
+    <main>
+      <div id="formulaire" class="half-part">
+      <h1 id="formulaire-title">Nous envoyer un message ?</h1>
+      <form>
+        <div id="formulaire-infos" class="half-part">
+          <input type="text" placeholder="Adresse Mail">
+          <input type="text" placeholder="Prénom">
+          <input type="text" placeholder="Nom">
+          <input type="text" placeholder="Télephone">
+          <input type="submit">
+        </div>
+        <div class="half-part">
+          <textarea placeholder="Contenu">
+          </textarea>
+        </div>
+       </form>
+      </div>
+      <div class="half-part">
+        <div id="map"></div>
+      </div>
+      <h2 id="information-utile">Informations Pratiques</h2>
+            <div class="info-utile">
+                <ul>
+                    <li>Createurs du site: Matthieu Tran - Matthieu Schuler</li>
+                    <li>E-Mail : airjar@adressemail.com</li>
+                    <li>Telephone : 01 42 01 02 03</li>
+                    <li>Adresse : Mont Blanc</li>
+                </ul>
+            </div>
+    </main>
+    <script>
+      initMap();
+    </script>
+  </body>
+</html>
